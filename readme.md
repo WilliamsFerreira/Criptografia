@@ -1,0 +1,1 @@
+Olá. Este arquivo é uma ferramenta para criptografar e descriptografar palavras.

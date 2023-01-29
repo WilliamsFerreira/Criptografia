@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge_Criptografia</title>
+
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/js/script.js">
+
+</head>
+
+<body>
+
+    <header>
+        <h1>Criptografia de Texto</h1>
+
+        <div id="logo">
+            <img src="imagens/one-logo.png" title="one-logo">
+
+            <img src="imagens/Alura-logo.png" title="Alura-logo">
+    </header>
+
+    <main>
+        <section>
+
+            <img class="banner" src="imagens/banner.png" alt="Cadeado_Criptografia">
+
+            <p id="texto1">
+                Digite um texto que você gostaria de criptografar ou descriptografar:
+            </p>
+
+            <textarea class="text-area" cols="12" rows="2" required placeholder="Digite seu texto aqui!"></textarea>
+
+
+            <div>
+                <p id="alerta">&#9888; Apenas letras minúsculas, sem acento &#9888;.</p>
+            </div>
+
+            <div class="botao-esquerda">
+                <button class="botao-criptografar" onclick="botaoCriptografia()">Criptografar</button>
+                <button class="botao-descriptografar" onclick="botaoDescriptografia()">Descriptografar</button>
+            </div>
+        </section>
+
+        <section class="lado-direito">
+            <div>
+                <img src="imagens/lupa.png" alt="lupa">
+
+                <div>
+                    <textarea class="mensagem" cols="12" rows="2" required placeholder="Resposta:"></textarea>
+                                   
+                    <button class="botao-copiar"onclick="copiarTexto()">Copiar</button>
+                </div>
+    </main>
+    </section>
+
+    <section class="footer-página">Contato:
+
+        <br>E-mail: <a href="mailto:will.nutri@gmail.com" target="_blank">will.nutri@gmail.com
+            <img src="https://cdn-icons-png.flaticon.com/128/5968/5968534.png" height="22px" width="25px"></a>
+        <br>Telefone:
+        <a href="https://wa.me/5521987914756" target="_blank">
+            +55 (21)98791-4756
+            <img src="https://cdn-icons-png.flaticon.com/512/1384/1384055.png" height="25px" width="25px">
+        </a>
+        <br>
+        Redes sociais:
+        <a href=https://github.com/WilliamsFerreira target=_blank><img
+                src="https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-512.png" height="25px"
+                width="25px"></a>
+
+        <a href=https://www.linkedin.com/in/williams-ferreira-01/ target=_blank><img
+                src="https://cdn-icons-png.flaticon.com/512/174/174857.png" height="25px" width="25px"></a>
+
+        <p id="footer-página">&copy;
+            Desenvolvido por Williams Ferreira - 2023 ®
+        </p>
+    </section>
+
+    <script src="/js/script.js"></script>
+</body>
+
+</html>
