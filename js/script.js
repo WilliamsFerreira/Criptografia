@@ -1,17 +1,16 @@
-const textArea = document.querySelector(".text-area");
-const mensagem = document.querySelector(".mensagem");
-
 // A letra "e" é convertida para "enter"
 // A letra "i" é convertida para "imes"
 // A letra "a" é convertida para "ai"
 // A letra "o" é convertida para "ober"
 // A letra "u" é convertida para "ufat"
 
+var textoCriptografado;
 
 function botaoCriptografia() {
-    const textoCriptografado = criptografar(textArea.value);
-    mensagem.value = textoCriptografado;
-    textArea.value = " ";
+    textoCriptografado = criptografar(document.getElementById("textoEntrada").value);
+    //mensagem.value = textoCriptografado;
+    //textArea.value = " ";
+    document.getElementById("textoSaida").value = textoCriptografado;
 }
 
 
@@ -30,9 +29,8 @@ function criptografar(stringCriptografia) {
 
 
 function botaoDescriptografia() {
-    const textoDescriptografado = descriptografar(textArea.value);
-    mensagem.value = textoDescriptografado;
-    textArea.value = " ";
+    var textoCript = descriptografar(document.getElementById("textoEntrada").value);
+    document.getElementById("textoSaida").value = textoCript;
 }
 
 
@@ -52,12 +50,6 @@ function descriptografar(stringDescriptografia) {
 
 function copiarTexto() {
 
-    var textoCopiado = document.querySelector ("mensagem");
-  
-    /* Deixamos o texto selecionado (em azul) */
-    textoCopiado.select();
-    textoCopiado.setSelectionRange(0, 99999); /* Para mobile */
-  
-    /* Copia o texto que está selecionado */
-    document.execCommand("copy");     
+    var textoCopiado = document.getElementById("textoSaida").value
+    navigator.clipboard.writeText(textoCopiado);     
 }
